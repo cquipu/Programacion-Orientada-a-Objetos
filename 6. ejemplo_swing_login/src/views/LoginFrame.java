@@ -57,8 +57,9 @@ public class LoginFrame extends JFrame {
 		btnIngresar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				DatosUsuario dusuario=new DatosUsuario();
-				if(dusuario.matchLogin()==true){
+				LoginController dusuario=new LoginController();
+				if(dusuario.matchLogin(TFUsuario.getText(), PSWContrasenia.getText())){
+					
 					JOptionPane.showMessageDialog(null, "Acceso exitoso!");
 					RegistroFrame registroF=new RegistroFrame();
 					registroF.setVisible(true);
