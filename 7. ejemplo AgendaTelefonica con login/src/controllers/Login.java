@@ -7,9 +7,6 @@ import java.io.IOException;
 
 public class Login {
 	
-	private String user="admin";
-	private String password="123";
-	
 	public boolean matchLogin(String usuario, String contrasenia){
 		
 		//if(usuario.equals(user)&&password.equals(contrasenia)){
@@ -32,7 +29,7 @@ public class Login {
 					if(datos[0].equals(usuario)&&datos[1].equals(contrasenia)){
 						return linea;
 					}
-					System.out.println("Usuario: "+datos[0]+"\nContaseña: "+datos[1]);
+					System.out.println("Usuario: "+datos[0]+"\nContaseÃ±a: "+datos[1]);
 				}	
 			}			
 		}catch(Exception e){
